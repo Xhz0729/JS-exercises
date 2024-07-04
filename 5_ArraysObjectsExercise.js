@@ -69,13 +69,23 @@ numDefine([-1, 100, 120, 0])
 
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
 // The values of those keys can be whatever you choose.
+const me = {
+  name: 'Xiahui',
+  favoriteAnimal: 'cat',
+  favoriteNumber: 22
+}
 
 // Exercise 13. Add another 2 keys and values to the object (you choose what they are)
+me['computer'] = 'Mac';
+me['favoriteColor'] = 'Pink';
 
 // Exercise 14. Update the favoriteAnimal value to something different
+me['favoriteAnimal'] = 'dog';
 
 // Exercise 15. Print the value of favoriteAnimal.
 // Note: there are at least 2 ways to get the value of a key, try to write both.
+console.log(me.favoriteAnimal);
+console.log(me['favoriteAnimal']);
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
