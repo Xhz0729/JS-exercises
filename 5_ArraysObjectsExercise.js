@@ -25,13 +25,13 @@ console.log(animals.length);
 console.log(animals[0]);
 
 // Exercise 7. Print the last item in the array (as part of your answer, use the same array property you used in exercise 5 above)
-console.log(animals[animals.length - 1];
+console.log(animals[animals.length - 1]);
 
 // Exercise 8. Remove the last item from the array
 animals.pop();
 
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
-const assortedThings = [2, 3, 4, 'Xia', 'Song', 'This']
+const assortedThings = [2, 3, 4, 'Pen', 'Song', 'Cup']
 
 // Exercise 10. Write a for loop that iterates through the assortedThings array and prints each index and item, such as:
 // Item #0 is potato
@@ -52,6 +52,20 @@ assortedThings.forEach((item, index) => {
 // 50 small
 //
 // Then write some function calls you would use to test your function.
+function numDefine(arr) {
+  for (let item of arr) {
+    if (item > 100) {
+      console.log("BIG");
+    }
+    else if (item >= 0 && item <= 100) {
+      console.log("small");
+    }
+    else {
+      console.log("negative");
+    }
+  }
+}
+numDefine([-1, 100, 120, 0])
 
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
 // The values of those keys can be whatever you choose.
