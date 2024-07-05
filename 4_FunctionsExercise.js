@@ -14,6 +14,7 @@
  function logGreeting() {
    console.log("Hello!");
  }
+ logGreeting();
 
 // Exercise 2. Define a function called getName() that *returns* a string that is your name.
 // Remember, this function should return the string -- not print it.
@@ -21,6 +22,7 @@
 function getName() {
   return "Xiahui";
 }
+console.log(getName());
 
 // Exercise 3. Call a function within a function -- Write a function called logGreeting2()
 // that prints a full sentence that contains your name: "Hello! My name is <name>."
@@ -30,6 +32,7 @@ function logGreeting2() {
   let name = getName();
   console.log (`Hello! My name is ${name}.`)
 }
+logGreeting2();
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
 // The function should return the sum of the 3 numbers.
@@ -38,8 +41,8 @@ function sumOfThree(num1, num2, num3) {
   let sum = num1 + num2 + num3;
   return sum;
 }
-sumOfThree(1, 2, 3) // 6
-sumOfThree(66,79,1999) //2144
+console.log(sumOfThree(1, 2, 3)); // 6
+console.log(sumOfThree(66,79,1999)); //2144
 
 
 // Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
@@ -54,9 +57,9 @@ function discount(age) {
     return false;
   }
 }
-discount(14); //true
-discount(65); //true
-discount(20); //false
+console.log(discount(14)); //true
+console.log(discount(65)); //true
+console.log(discount(20)); //false
 
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
@@ -70,8 +73,6 @@ function printStr(num, str) {
 printStr(2, 'XX') 
 printStr(10, 'ZZ')
 printStr(5, 'UU')
-
-
 
 // Exercise 7. Read the following code (don't run it yet)
 function mysteryFunction1(p1) {
