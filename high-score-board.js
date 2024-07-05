@@ -8,7 +8,7 @@
 //  */
 function createScoreBoard() {
   const scoreBoard = {
-    'The-Best-Ever': 1000000
+    'The Best Ever': 1000000
   }
   return scoreBoard;
 }
